@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="jwtc.android.chess"
+	xmlns:tools="http://schemas.android.com/tools"
+	package="jwtc.android.chess"
       android:versionCode="150"
       android:versionName="8.9.0"
       android:installLocation="auto"
@@ -43,7 +44,8 @@
 			<intent-filter>
   				<action android:name="android.intent.action.VIEW" /> 
   			</intent-filter>
-  			<intent-filter> 
+  			<intent-filter android:scheme="http"
+				tools:ignore="AppLinkUrlError">
             	<action android:name="android.intent.action.VIEW" />
             	<category android:name="android.intent.category.DEFAULT" />
             	<data android:mimeType="application/x-chess-pgn" />
@@ -92,7 +94,7 @@
 			<intent-filter>
   				<action android:name="android.intent.action.VIEW" /> 
   			</intent-filter>
-  			<intent-filter> 
+  			<intent-filter tools:ignore="AppLinkUrlError">
             	<action android:name="android.intent.action.VIEW" />
             	<category android:name="android.intent.category.DEFAULT" />
             	<data android:mimeType="application/x-chess-fen" />
@@ -177,7 +179,7 @@
 			<intent-filter>
   				<action android:name="android.intent.action.VIEW" /> 
   			</intent-filter>
-  			<intent-filter> 
+  			<intent-filter tools:ignore="AppLinkUrlError">
             	<action android:name="android.intent.action.VIEW" />
             	<category android:name="android.intent.category.DEFAULT" />
             	<data android:mimeType="application/x-chess-pgn" />
